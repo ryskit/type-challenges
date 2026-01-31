@@ -17,4 +17,6 @@ type cases = [
   Expect<Equal<Includes<[1 | 2], 1>, false>>,
   Expect<Equal<Includes<[null], undefined>, false>>,
   Expect<Equal<Includes<[undefined], null>, false>>,
+  Expect<Equal<Includes<[never], null>, false>>,
+  Expect<Equal<Includes<[any], null>, false>>,
 ]
